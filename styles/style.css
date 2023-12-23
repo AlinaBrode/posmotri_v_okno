@@ -64,14 +64,13 @@ ol {
 }
 
 .visually-hidden {
-   position: absolute;
+  position: absolute;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
- 
 }
 
 .content__list {
@@ -87,6 +86,7 @@ ol {
   width: 100%;
   height: 100%;
   justify-content: flex-end;
+  width: 399px;
 }
 
 .result {
@@ -95,6 +95,7 @@ ol {
   justify-content: space-between;
   width: 711px;
   height: 456px;
+  align-self: flex-end;
 }
 
 .result__video-container {
@@ -109,7 +110,6 @@ ol {
   background-size: cover;
 }
 
-
 .content__list-item:not(:last-child) {
 margin-bottom: 26px;
 }
@@ -122,14 +122,27 @@ margin-bottom: 26px;
   padding-bottom: 2px;
   background-size: cover;
 }
+
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  font-size: 18px;
+  font-size: 20px;
   border-width: 1px;
   border-color:#FFFFFF;
   background-color: #1b1919;
   color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.search-form__label {
+}
+
+.search-form__label-text {
+  appearance: none;
 }
 
 .title {
@@ -139,13 +152,16 @@ margin-bottom: 26px;
   font-family: "Oswald";
 
 }
+
 .content__accent {
 color: grey;
 }
+
 .content__card-link {
   text-decoration: none;
   color: #FFFFFF;
   gap:6px;
+  cursor: pointer;
 } 
 
 .content__video-card {
@@ -164,4 +180,64 @@ color: grey;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
   line-height: 16.2px;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.search-form__checkbox-list {
+  height: 27px;
+  width: fit-content;
+  cursor: pointer;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.more-button {
+  border-color:#FFFFFF;
+  background-color: #1b1919;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  border-width: 1px;
+  font-size: 18px;
+  height: 34px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+
+input[type="checkbox"] + span {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  gap: 5px;
+  background-color: #1b1919;
+
+  }
+
+  input[type="checkbox"][value="afternoon"] + span {
+  display: inline-block;
+  border: 1px solid #fff;
+  background-color:#FFFFFF;
+  box-shadow: inset 0 0 0 1px black;
+
+  }
+
+.search-form__textfield {
+  background-color:black;
+  color: #FFFFFF;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  border-top: 1px solid #FFFFFF ;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: none;
+  width: 225px;
 }
