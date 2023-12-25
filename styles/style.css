@@ -42,6 +42,7 @@ ol {
   gap: 30px;
   max-width: 1140px;
   justify-self: center;
+  margin-top: 200px;
 }
 
 .search-form {
