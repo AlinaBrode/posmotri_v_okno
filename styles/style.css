@@ -10,7 +10,6 @@ html {
 
 .page {
   inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -93,13 +92,9 @@ ol {
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
   border: 1px solid #FFFFFF;
-   /* Добавляет белую границу к лейблу */
+ 
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  border: 1px solid #FFFFFF;
-   /* Добавляет белую границу к лейблу */
-}
 
 .search-form__label-text {
   appearance: none;
