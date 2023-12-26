@@ -70,6 +70,7 @@ ol {
   position: relative;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .search-form__textfield {
@@ -127,6 +128,7 @@ ol {
 
 .search-form__pseudo-checkbox {
   position: relative;
+  margin-right: 5px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -137,6 +139,7 @@ ol {
   background-color: #ffffff;
   top: 15%;
   left: 15%;
+  position: inherit;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -150,6 +153,7 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+  margin: 0px 0px 0px 0px; 
 }
 
 .content__list {
