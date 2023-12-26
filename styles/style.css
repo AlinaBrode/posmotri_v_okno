@@ -10,6 +10,8 @@ html {
 
 .page {
   inline-size: 1200px;
+  block-size: 100%;
+  height: 800px;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -55,7 +57,7 @@ ol {
 }
 
 .search-form__fieldset {
-  border:none;
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -71,8 +73,8 @@ ol {
 }
 
 .search-form__textfield {
-  background-color:black;
-  color: #FFFFFF;
+  background-color: black;
+  color: #ffffff;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
 
@@ -91,14 +93,36 @@ ol {
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
-  border: 1px solid #FFFFFF;
- 
+  border: 1px solid #ffffff;
+  /* Добавляет белую границу к лейблу */
 }
 
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  border: 1px solid #ffffff;
+  /* Добавляет белую границу к лейблу */
+}
+
+.search-form__checkbox:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__submit-button:active {
+  background-color: gray;
+}
+
+.search-form__submit-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .search-form__label-text {
   appearance: none;
+}
 
+.search-form__label-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox {
@@ -106,21 +130,19 @@ ol {
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: none;
   position: absolute;
   width: 70%;
   height: 70%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   top: 15%;
-  left: 15%; 
+  left: 15%;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
-
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -171,7 +193,7 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 .content__video-card-thumbnail {
@@ -188,7 +210,7 @@ margin-bottom: 26px;
   height: 34px;
   font-size: 20px;
   border-width: 1px;
-  border-color:#FFFFFF;
+  border-color: #ffffff;
   background-color: #1b1919;
   color: #fff;
   cursor: pointer;
@@ -201,29 +223,27 @@ margin-bottom: 26px;
 .title {
   font-size: 75px;
   line-height: 70.5px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-family: "Oswald";
   width: 260px;
-
 }
 
 .content__accent {
-color: grey;
+  color: grey;
 }
 
 .content__card-link {
   text-decoration: none;
-  color: #FFFFFF;
-  gap:6px;
+  color: #ffffff;
+  gap: 6px;
   cursor: pointer;
-} 
+}
 
-  .content__video-card {
-    display: grid;
-    grid-template-columns: 1fr 194px;
-    grid-template-rows: 1fr;
-    max-width: 394px;
-
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 194px;
+  grid-template-rows: 1fr;
+  max-width: 394px;
 }
 
 .content__video-card-title {
@@ -231,7 +251,6 @@ color: grey;
   font-family: "Oswald";
   font-size: 30px;
   text-transform: uppercase;
-
 }
 
 .content__video-card-description {
@@ -245,9 +264,8 @@ color: grey;
   min-width: 200px;
 }
 
-
 .more-button {
-  border-color:#FFFFFF;
+  border-color: #ffffff;
   background-color: #1b1919;
   color: #fff;
   cursor: pointer;
@@ -259,9 +277,7 @@ color: grey;
   height: 34px;
   width: 100%;
   box-sizing: border-box;
-
 }
-
 
 input[type="checkbox"] + span {
   display: inline-block;
@@ -270,10 +286,9 @@ input[type="checkbox"] + span {
   height: 19px;
   gap: 5px;
   background-color: #1b1919;
-
-  }
+}
 
 /*.search-form__textfield:focus {
   outline: none; /* Убирает обычную обводку при фокусе
 }
-:has(:focus-visible)/*
+:has(:focus-visible)*/
