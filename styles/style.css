@@ -190,7 +190,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   width: 711px;
- 
+  min-height: 456px;
   align-self: flex-end;
 }
 
