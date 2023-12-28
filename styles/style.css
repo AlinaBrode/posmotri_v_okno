@@ -46,6 +46,7 @@ ol {
   margin-left: 25px;
   align-self: center;
   margin-top: 133px;
+  margin-bottom: 133px;
 }
 
 .search-form {
@@ -310,6 +311,10 @@ ol {
   height: 34px;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
 }
 
 input[type="checkbox"] + span {
