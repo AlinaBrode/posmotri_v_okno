@@ -72,6 +72,9 @@ ol {
   position: relative;
   display: flex;
   align-items: center;
+
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .search-form__textfield {
@@ -81,11 +84,9 @@ ol {
   font-size: 18px;
   border-top: 2px solid #545050;
   border-right: none;
+  border-bottom: 2px solid #545050;
+  border-left: none;
   width: 225px;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
 }
 
 .search-form__checkbox-list {
@@ -173,7 +174,7 @@ ol {
 }
 
 .content__list {
-  max-height: 298px;
+  height: 298px;
   overflow-y: auto;
   position: relative;
   overflow-x: hidden;
